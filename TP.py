@@ -1,6 +1,8 @@
 
 import pandas as pd
 
+# Charger les données
+
 df_satellite = pd.read_csv("C:\\Users\\akram\\OneDrive\\Documents\\Jeu_de_données\\satellite.csv")
 df_breastcancer = pd.read_csv("C:\\Users\\akram\\OneDrive\\Documents\\Jeu_de_données\\breastcancer.csv")
 df_speech = pd.read_csv("C:\\Users\\akram\\OneDrive\\Documents\\Jeu_de_données\\speech.csv")
