@@ -119,3 +119,10 @@ for data_name , data_path in datasets.items():
     print("\n------------------------------------------------------------------")
 
 
+print("Précision\n", precision_df)
+print("\nRappel\n", recall_df)
+print("\nAUC ROC\n", aucroc_df)
+print("\nAUC PR\n", aucpr_df)
+print("\nTemps d'exécution\n", time_df)
+
+
