@@ -1,0 +1,408 @@
+python.exe "c:/Users/amaly/OneDrive/Bureau/Amu M2/Fouille des données/Tp_durand/Fouilles_des_donnees/part2_protoc_expre.py"
+Data name is  satellite  !
+Detector name is  HBOS  !
+Execution time: 2.656907
+[[4575  450]
+ [  15   60]]
+Precision:0.11765 
+Recall:0.8
+AUCROC:0.91892
+AUCPR:0.54413
+Detector name is  CBLOF  !
+Execution time: 2.701362
+[[4580  445]
+ [  10   65]]
+Precision:0.12745 
+Recall:0.86667
+AUCROC:0.96223
+AUCPR:0.60363
+Detector name is  IForest  !
+Execution time: 0.13453
+[[4579  446]
+ [  11   64]]
+Precision:0.12549
+Recall:0.85333
+AUCROC:0.94797
+AUCPR:0.62976
+Detector name is  KNN  !
+Execution time: 0.04355
+[[4584  441]
+ [   6   69]]
+Precision:0.13529
+Recall:0.92
+AUCROC:0.97078
+AUCPR:0.44694
+Detector name is  LOF  !
+Execution time: 0.044845
+[[4558  467]
+ [  32   43]]
+Precision:0.08431
+Recall:0.57333
+AUCROC:0.67575
+AUCPR:0.18325
+Detector name is  OCSVM  !
+Execution time: 1.108253
+[[4577  448]
+ [  13   62]]
+Precision:0.12157
+Recall:0.82667
+AUCROC:0.93267
+AUCPR:0.62098
+
+------------------------------------------------------------------
+Data name is  breastcancer  !
+Detector name is  HBOS  !
+Execution time: 0.002638
+[[330  27]
+ [  0  10]]
+Precision:0.27027
+Recall:1.0
+AUCROC:0.97759
+AUCPR:0.50759
+Detector name is  CBLOF  !
+Execution time: 0.006538
+[[329  28]
+ [  1   9]]
+Precision:0.24324
+Recall:0.9
+AUCROC:0.97815
+AUCPR:0.57791
+Detector name is  IForest  !
+Execution time: 0.081491
+[[330  27]
+ [  0  10]]
+Precision:0.27027
+Recall:1.0
+AUCROC:0.98824
+AUCPR:0.71023
+Detector name is  KNN  !
+Execution time: 0.011978
+[[330  27]
+ [  0  10]]
+Precision:0.27027
+Recall:1.0
+AUCROC:0.97815
+AUCPR:0.56365
+Detector name is  LOF  !
+Execution time: 0.010227
+[[330  27]
+ [  0  10]]
+Precision:0.27027
+Recall:1.0
+AUCROC:0.98459
+AUCPR:0.65735
+Detector name is  OCSVM  !
+Execution time: 0.008498
+[[330  27]
+ [  0  10]]
+Precision:0.27027
+Recall:1.0
+AUCROC:0.98151
+AUCPR:0.49525
+
+------------------------------------------------------------------
+Data name is  speech  !
+Detector name is  HBOS  !
+Execution time: 0.065882
+[[3262  363]
+ [  55    6]]
+Precision:0.01626
+Recall:0.09836
+AUCROC:0.4757
+AUCPR:0.01894
+Detector name is  CBLOF  !
+Execution time: 0.068731
+[[3263  362]
+ [  54    7]]
+Precision:0.01897
+Recall:0.11475
+AUCROC:0.47741
+AUCPR:0.01697
+Detector name is  IForest  !
+Execution time: 0.141519
+[[3263  362]
+ [  54    7]]
+Precision:0.01897
+Recall:0.11475
+AUCROC:0.49804
+AUCPR:0.01747
+Detector name is  KNN  !
+Execution time: 0.141679
+[[3263  362]
+ [  54    7]]
+Precision:0.01897
+Recall:0.11475
+AUCROC:0.48621
+AUCPR:0.01788
+Detector name is  LOF  !
+Execution time: 0.107044
+[[3265  360]
+ [  52    9]]
+Precision:0.02439 
+Recall:0.14754
+AUCROC:0.50749
+AUCPR:0.02185
+Detector name is  OCSVM  !
+Execution time: 1.851276
+[[3263  362]
+ [  54    7]]
+Precision:0.01897
+Recall:0.11475
+AUCROC:0.46658
+AUCPR:0.01679
+
+------------------------------------------------------------------
+Data name is  shuttle  !
+Detector name is  HBOS  !
+Execution time: 0.011503
+[[41972  3614]
+ [   23   855]]
+Precision:0.19132 
+Recall:0.9738
+AUCROC:0.98425
+AUCPR:0.95065
+Detector name is  CBLOF  !
+Execution time: 0.04372
+[[41810  3776]
+ [    7   871]]
+Precision:0.18743 
+Recall:0.99203
+AUCROC:0.99669
+AUCPR:0.80659
+Detector name is  IForest  !
+Execution time: 0.45846
+[[41807  3779]
+ [   10   868]]
+Precision:0.18679 
+Recall:0.98861
+AUCROC:0.99799
+AUCPR:0.98063
+Detector name is  KNN  !
+Execution time: 2.453149
+[[41531  4055]
+ [  286   592]]
+Precision:0.12739 
+Recall:0.67426
+AUCROC:0.89595
+AUCPR:0.17992
+Detector name is  LOF  !
+Execution time: 4.94333
+[[41035  4551]
+ [  782    96]]
+Precision:0.02066 
+Recall:0.10934
+AUCROC:0.48006
+AUCPR:0.04738
+Detector name is  OCSVM  !
+Execution time: 111.757207
+[[41802  3784]
+ [   15   863]]
+Precision:0.18571 
+Recall:0.98292
+AUCROC:0.99464
+AUCPR:0.7796
+
+------------------------------------------------------------------
+Précision
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite  0.11765  0.12745  0.12549  0.13529  0.08431  0.12157
+1   breastcancer  0.27027  0.24324  0.27027  0.27027  0.27027  0.27027
+2         speech  0.01626  0.01897  0.01897  0.01897  0.02439  0.01897
+3        shuttle  0.19132  0.18743  0.18679  0.12739  0.02066  0.18571
+
+Rappel
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite      0.8  0.86667  0.85333     0.92  0.57333  0.82667
+1   breastcancer      1.0      0.9      1.0      1.0      1.0      1.0
+2         speech  0.09836  0.11475  0.11475  0.11475  0.14754  0.11475
+3        shuttle   0.9738  0.99203  0.98861  0.67426  0.10934  0.98292
+
+AUC ROC
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite  0.91892  0.96223  0.94797  0.97078  0.67575  0.93267
+1   breastcancer  0.97759  0.97815  0.98824  0.97815  0.98459  0.98151
+2         speech   0.4757  0.47741  0.49804  0.48621  0.50749  0.46658
+3        shuttle  0.98425  0.99669  0.99799  0.89595  0.48006  0.99464
+
+AUC PR
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite  0.54413  0.60363  0.62976  0.44694  0.18325  0.62098
+1   breastcancer  0.50759  0.57791  0.71023  0.56365  0.65735  0.49525
+2         speech  0.01894  0.01697  0.01747  0.01788  0.02185  0.01679
+3        shuttle  0.95065  0.80659  0.98063  0.17992  0.04738   0.7796
+
+Temps d'exécution
+   Jeu de données      HBOS     CBLOF   IForest       KNN       LOF       OCSVM
+0      satellite  2.656907  2.701362   0.13453   0.04355  0.044845    1.108253
+1   breastcancer  0.002638  0.006538  0.081491  0.011978  0.010227    0.008498
+2         speech  0.065882  0.068731  0.141519  0.141679  0.107044    1.851276
+3        shuttle  0.011503   0.04372   0.45846  2.453149   4.94333  111.757207
+
+
+# partie 4
+
+PS C:\Users\amaly\OneDrive\Bureau\Amu M2\Fouille des données\Tp_durand> & C:\Users\amaly\AppData\Local\Programs\Python\Python313\python.exe "c:/Users/amaly/OneDrive/Bureau/Amu M2/Fouille des données/Tp_durand/Fouilles_des_donnees/part5_protoc_expre.py"
+
+Traitement de satellite
+
+Exécution de HBOS (10 fois)
+Itération 10/10
+
+Exécution de CBLOF (10 fois)
+Itération 10/10
+
+Exécution de IForest (10 fois)
+Itération 10/10
+
+Exécution de KNN (10 fois)
+Itération 10/10
+
+Exécution de LOF (10 fois)
+Itération 10/10
+
+Exécution de OCSVM (10 fois)
+Itération 10/10
+
+Traitement de breastcancer
+
+Exécution de HBOS (10 fois)
+Itération 10/10
+
+Exécution de CBLOF (10 fois)
+Itération 10/10
+
+Exécution de IForest (10 fois)
+Itération 10/10
+
+Exécution de KNN (10 fois)
+Itération 10/10
+
+Exécution de LOF (10 fois)
+Itération 10/10
+
+Exécution de OCSVM (10 fois)
+Itération 10/10
+
+Traitement de speech
+
+Exécution de HBOS (10 fois)
+Itération 10/10
+
+Exécution de CBLOF (10 fois)
+Itération 10/10
+
+Exécution de IForest (10 fois)
+Itération 10/10
+
+Exécution de KNN (10 fois)
+Itération 10/10
+
+Exécution de LOF (10 fois)
+Itération 10/10
+
+Exécution de OCSVM (10 fois)
+Itération 10/10
+
+Traitement de shuttle
+
+Exécution de HBOS (10 fois)
+Itération 10/10
+
+Exécution de CBLOF (10 fois)
+Itération 10/10
+
+Exécution de IForest (10 fois)
+Itération 10/10
+
+Exécution de KNN (10 fois)
+Itération 10/10
+
+Exécution de LOF (10 fois)
+Itération 10/10
+
+Exécution de OCSVM (10 fois)
+Itération 10/10
+
+================================================================================
+=== RÉSULTATS MOYENS (10 itérations) ===
+================================================================================
+
+Precision moyen:
+Jeu de données    HBOS   CBLOF  IForest     KNN     LOF   OCSVM
+     satellite 0.11765 0.12118  0.12314 0.13529 0.08431 0.12157
+  breastcancer 0.27027 0.25405  0.26757 0.27027 0.27027 0.27027
+        speech 0.01626 0.01978  0.01924 0.01897 0.02439 0.01897
+       shuttle 0.19132 0.18375  0.18652 0.12739 0.02066 0.18571
+
+Écart-type Precision:
+Jeu de données  HBOS   CBLOF  IForest  KNN  LOF  OCSVM
+     satellite   0.0 0.00510  0.00301  0.0  0.0    0.0
+  breastcancer   0.0 0.01793  0.00811  0.0  0.0    0.0
+        speech   0.0 0.00124  0.00548  0.0  0.0    0.0
+       shuttle   0.0 0.01111  0.00055  0.0  0.0    0.0
+
+--------------------------------------------------------------------------------
+
+Recall moyen:
+Jeu de données    HBOS   CBLOF  IForest     KNN     LOF   OCSVM
+     satellite 0.80000 0.82400  0.83733 0.92000 0.57333 0.82667
+  breastcancer 1.00000 0.94000  0.99000 1.00000 1.00000 1.00000
+        speech 0.09836 0.11967  0.11639 0.11475 0.14754 0.11475
+       shuttle 0.97380 0.97255  0.98713 0.67426 0.10934 0.98292
+
+Écart-type Recall:
+Jeu de données  HBOS   CBLOF  IForest  KNN  LOF  OCSVM
+     satellite   0.0 0.03467  0.02048  0.0  0.0    0.0
+  breastcancer   0.0 0.06633  0.03000  0.0  0.0    0.0
+        speech   0.0 0.00752  0.03315  0.0  0.0    0.0
+       shuttle   0.0 0.05881  0.00297  0.0  0.0    0.0
+
+--------------------------------------------------------------------------------
+
+AUC_ROC moyen:
+Jeu de données    HBOS   CBLOF  IForest     KNN     LOF   OCSVM
+     satellite 0.91892 0.95814  0.94657 0.97078 0.67575 0.93267
+  breastcancer 0.97759 0.97787  0.98196 0.97815 0.98459 0.98151
+        speech 0.47570 0.47186  0.47517 0.48621 0.50749 0.46658
+       shuttle 0.98425 0.98551  0.99759 0.89595 0.48006 0.99464
+
+Écart-type AUC_ROC:
+Jeu de données  HBOS   CBLOF  IForest  KNN  LOF  OCSVM
+     satellite   0.0 0.00373  0.00771  0.0  0.0    0.0
+  breastcancer   0.0 0.00798  0.00385  0.0  0.0    0.0
+        speech   0.0 0.00135  0.02116  0.0  0.0    0.0
+       shuttle   0.0 0.03319  0.00046  0.0  0.0    0.0
+
+--------------------------------------------------------------------------------
+
+AUC_PR moyen:
+Jeu de données    HBOS   CBLOF  IForest     KNN     LOF   OCSVM
+     satellite 0.54413 0.60554  0.64044 0.44694 0.18325 0.62098
+  breastcancer 0.50759 0.58741  0.64032 0.56365 0.65735 0.49525
+        speech 0.01894 0.01690  0.01677 0.01788 0.02185 0.01679
+       shuttle 0.95065 0.76843  0.97755 0.17992 0.04738 0.77960
+
+Écart-type AUC_PR:
+Jeu de données  HBOS   CBLOF  IForest  KNN  LOF  OCSVM
+     satellite   0.0 0.00935  0.02374  0.0  0.0    0.0
+  breastcancer   0.0 0.04543  0.04261  0.0  0.0    0.0
+        speech   0.0 0.00017  0.00141  0.0  0.0    0.0
+       shuttle   0.0 0.12011  0.00156  0.0  0.0    0.0
+
+--------------------------------------------------------------------------------
+
+Time moyen:
+Jeu de données    HBOS   CBLOF  IForest     KNN      LOF     OCSVM
+     satellite 0.21573 0.24808  0.13892 0.04501  0.04711   2.65651
+  breastcancer 0.01271 0.01291  0.23822 0.01660  0.01659   0.01828
+        speech 0.22545 0.15613  0.34017 0.41498  0.29545   5.05873
+       shuttle 0.04029 0.07855  1.05658 5.31598 12.78994 220.05893
+
+Écart-type Time:
+Jeu de données    HBOS   CBLOF  IForest     KNN     LOF    OCSVM
+     satellite 0.62266 0.70453  0.00760 0.00379 0.00139  0.97784
+  breastcancer 0.00196 0.00192  0.02574 0.00104 0.00218  0.00123
+        speech 0.01156 0.02012  0.03895 0.03857 0.01163  0.17996
+       shuttle 0.01011 0.01767  0.06418 1.79837 0.20586 68.22890
+
+--------------------------------------------------------------------------------
