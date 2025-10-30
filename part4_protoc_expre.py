@@ -1,12 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Éditeur de Spyder
-
-Ceci est un script temporaire.
-"""
+# --------------- PARTIE 2 Protocole experimental avec hyperparamètres variés
+import os
 import numpy as np
 import pandas as pd
-import os
 
 from time import perf_counter
 
@@ -20,15 +15,9 @@ from pyod.models.ocsvm import OCSVM
 from sklearn.metrics import confusion_matrix, precision_score, recall_score
 from sklearn.metrics import roc_curve, roc_auc_score, precision_recall_curve, auc
 
-# Nombre d'itérations pour chaque détecteur
-N_ITERATIONS = 10
-
-# --------------- PARTIE 4 Protocole experimental avec des petits jeux des données mais en prennant compte leur moyenne  ------------------
-
-
+# Configuration
 current_dir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(current_dir, "data")
-
 pd.set_option('display.max_columns', None)
 
 datasets = {
@@ -38,106 +27,141 @@ datasets = {
     'shuttle': os.path.join(data_dir, "shuttle.csv")
 }
 
-detecteurs = {
-    'HBOS': lambda: HBOS(), 
-    'CBLOF': lambda: CBLOF(), 
-    'IForest': lambda: IForest(), 
-    'KNN': lambda: KNN(), 
-    'LOF': lambda: LOF(), 
-    'OCSVM': lambda: OCSVM()
+# Dictionnaire des détecteurs avec 3 configurations d'hyperparamètres différentes
+detecteurs_configs = {
+    'HBOS': [
+        {'n_bins': 10, 'alpha': 0.1, 'tol': 0.5},
+        {'n_bins': 20, 'alpha': 0.05, 'tol': 0.3},
+        {'n_bins': 15, 'alpha': 0.2, 'tol': 0.7}
+    ],
+    'CBLOF': [
+        {'n_clusters': 8, 'alpha': 0.9, 'beta': 5},
+        {'n_clusters': 10, 'alpha': 0.85, 'beta': 3},
+        {'n_clusters': 12, 'alpha': 0.95, 'beta': 7}
+    ],
+    'IForest': [
+        {'n_estimators': 100, 'max_samples': 256, 'max_features': 1.0},
+        {'n_estimators': 150, 'max_samples': 128, 'max_features': 0.8},
+        {'n_estimators': 200, 'max_samples': 512, 'max_features': 0.5}
+    ],
+    'KNN': [
+        {'n_neighbors': 5, 'method': 'largest', 'metric': 'minkowski'},
+        {'n_neighbors': 10, 'method': 'mean', 'metric': 'euclidean'},
+        {'n_neighbors': 15, 'method': 'median', 'metric': 'manhattan'}
+    ],
+    'LOF': [
+        {'n_neighbors': 20, 'metric': 'minkowski', 'p': 2},
+        {'n_neighbors': 30, 'metric': 'euclidean', 'p': 1},
+        {'n_neighbors': 40, 'metric': 'manhattan', 'p': 3}
+    ],
+    'OCSVM': [
+        {'kernel': 'rbf', 'gamma': 'auto', 'nu': 0.5},
+        {'kernel': 'linear', 'gamma': 'scale', 'nu': 0.3},
+        {'kernel': 'poly', 'gamma': 'auto', 'nu': 0.7, 'degree': 3}
+    ]
 }
 
-# Creation des dataFrames pour stocker les resultats de chaque métrique
-df_columns = ['Jeu de données', 'HBOS', 'CBLOF', 'IForest', 'KNN', 'LOF', 'OCSVM']
+# Creation des dataFrames pour stocker les resultats
+results_data = []
 
-# DataFrames pour stocker les moyennes
-precision_df = pd.DataFrame(columns=df_columns)
-recall_df = pd.DataFrame(columns=df_columns)
-time_df = pd.DataFrame(columns=df_columns)
-aucroc_df = pd.DataFrame(columns=df_columns)
-aucpr_df = pd.DataFrame(columns=df_columns)
-
-# DataFrames pour stocker les écarts-types
-precision_std_df = pd.DataFrame(columns=df_columns)
-recall_std_df = pd.DataFrame(columns=df_columns)
-time_std_df = pd.DataFrame(columns=df_columns)
-aucroc_std_df = pd.DataFrame(columns=df_columns)
-aucpr_std_df = pd.DataFrame(columns=df_columns)
-
-for data_name, data_path in datasets.items():
-    print(f"\nTraitement de {data_name}")
-    data = pd.read_csv(data_path).to_numpy()
-    X_data = data[:, :-1]
-    y_label = data[:, -1]
-
-    # Listes pour stocker les résultats de chaque itération
-    results = {
-        'precision': {det: [] for det in detecteurs.keys()},
-        'recall': {det: [] for det in detecteurs.keys()},
-        'time': {det: [] for det in detecteurs.keys()},
-        'aucroc': {det: [] for det in detecteurs.keys()},
-        'aucpr': {det: [] for det in detecteurs.keys()}
-    }
-
+# Traitement de chaque jeu de données
+for data_name, data_path in datasets.items(): 
+    print(f"\n{'='*80}")
+    print(f"Traitement du jeu de données: {data_name}")
+    print(f"{'='*80}")
     
-    for detector_name, detector_factory in detecteurs.items():
-        print(f"\nExécution de {detector_name} ({N_ITERATIONS} fois)")
+    # Charger les données 
+    data = pd.read_csv(data_path).to_numpy()
+    X_data = data[:, :-1]  # Features
+    y_label = data[:, -1]   # Labels
+
+    # Tester chaque détecteur avec ses 3 configurations
+    for detector_name, configs in detecteurs_configs.items():
+        print(f"\n--- Détecteur: {detector_name} ---")
         
-        for i in range(N_ITERATIONS):
-            print(f"Itération {i+1}/{N_ITERATIONS}", end='\r')
-           
-            detector = detector_factory()
+        for config_idx, config in enumerate(configs, 1):
+            print(f"\nConfiguration {config_idx}: {config}")
             
-          
+            # Créer le détecteur avec les hyperparamètres spécifiques
+            if detector_name == 'HBOS':
+                detector = HBOS(**config)
+            elif detector_name == 'CBLOF':
+                detector = CBLOF(**config)
+            elif detector_name == 'IForest':
+                detector = IForest(**config)
+            elif detector_name == 'KNN':
+                detector = KNN(**config)
+            elif detector_name == 'LOF':
+                detector = LOF(**config)
+            elif detector_name == 'OCSVM':
+                detector = OCSVM(**config)
+            
+            # Mesurer le temps d'exécution
             start = perf_counter()
             detector.fit(X_data)
             scores = detector.decision_scores_
             y_pred = detector.labels_
             end = perf_counter()
             elapsed = round(end - start, ndigits=6)
-
+            
+            # Calculer les métriques
+            matrice = confusion_matrix(y_label, y_pred)
             precision = round(precision_score(y_label, y_pred), ndigits=5)
             recall = round(recall_score(y_label, y_pred), ndigits=5)
             aucroc = round(roc_auc_score(y_label, scores), ndigits=5)
             
             precisions, recalls, _ = precision_recall_curve(y_label, scores)
             aucpr = round(auc(recalls, precisions), ndigits=5)
+            
+            # Afficher les résultats
+            print(f"Temps: {elapsed}s | Precision: {precision} | Recall: {recall} | AUC-ROC: {aucroc} | AUC-PR: {aucpr}")
+            
+            # Stocker les résultats
+            results_data.append({
+                'Dataset': data_name,
+                'Detector': detector_name,
+                'Config': f"Config_{config_idx}",
+                'Hyperparams': str(config),
+                'Precision': precision,
+                'Recall': recall,
+                'AUC_ROC': aucroc,
+                'AUC_PR': aucpr,
+                'Time': elapsed
+            })
 
-           
-            results['precision'][detector_name].append(precision)
-            results['recall'][detector_name].append(recall)
-            results['time'][detector_name].append(elapsed)
-            results['aucroc'][detector_name].append(aucroc)
-            results['aucpr'][detector_name].append(aucpr)
+# Créer un DataFrame avec tous les résultats
+results_df = pd.DataFrame(results_data)
 
-        print() 
+# Afficher les résultats globaux
+print(f"\n{'='*80}")
+print("RÉSULTATS GLOBAUX")
+print(f"{'='*80}\n")
+print(results_df.to_string(index=False))
 
+# Créer des tableaux pivot pour chaque métrique
+print(f"\n{'='*80}")
+print("TABLEAU RÉCAPITULATIF PAR MÉTRIQUE")
+print(f"{'='*80}\n")
 
-    for metric, metric_df, std_df in [
-        ('precision', precision_df, precision_std_df),
-        ('recall', recall_df, recall_std_df),
-        ('time', time_df, time_std_df),
-        ('aucroc', aucroc_df, aucroc_std_df),
-        ('aucpr', aucpr_df, aucpr_std_df)
-    ]:
-        means = [data_name] + [np.mean(results[metric][det]) for det in detecteurs.keys()]
-        stds = [data_name] + [np.std(results[metric][det]) for det in detecteurs.keys()]
-        
-        mean_df = pd.DataFrame([means], columns=df_columns)
-        std_df_tmp = pd.DataFrame([stds], columns=df_columns)
-        
-        metric_df = pd.concat([metric_df, mean_df], axis=0, ignore_index=True)
-        std_df = pd.concat([std_df, std_df_tmp], axis=0, ignore_index=True)
+for metric in ['Precision', 'Recall', 'AUC_ROC', 'AUC_PR', 'Time']:
+    print(f"\n--- {metric} ---")
+    pivot = results_df.pivot_table(
+        values=metric,
+        index='Dataset',
+        columns=['Detector', 'Config'],
+        aggfunc='first'
+    )
+    print(pivot)
 
-# Afficher les résultats
-print("\n=== RÉSULTATS MOYENS (10 itérations) ===")
-print("\nPrécision moyenne:\n", precision_df)
-print("\nÉcart-type Précision:\n", precision_std_df)
-print("\nRappel moyen:\n", recall_df)
-print("\nÉcart-type Rappel:\n", recall_std_df)
-print("\nAUC ROC moyen:\n", aucroc_df)
-print("\nÉcart-type AUC ROC:\n", aucroc_std_df)
-print("\nAUC PR moyen:\n", aucpr_df)
-print("\nÉcart-type AUC PR:\n", aucpr_std_df)
-print("\nTemps d'exécution moyen:\n", time_df)
-print("\nÉcart-type Temps d'exécution:\n", time_std_df)
+# Identifier les meilleures configurations pour chaque détecteur sur chaque dataset
+print(f"\n{'='*80}")
+print("MEILLEURES CONFIGURATIONS (par AUC-ROC)")
+print(f"{'='*80}\n")
+
+best_configs = results_df.loc[results_df.groupby(['Dataset', 'Detector'])['AUC_ROC'].idxmax()]
+print(best_configs[['Dataset', 'Detector', 'Config', 'Hyperparams', 'AUC_ROC', 'Precision', 'Recall']].to_string(index=False))
+
+# Sauvegarder les résultats dans un fichier CSV
+output_path = os.path.join(current_dir, "resultats_hyperparametres.csv")
+results_df.to_csv(output_path, index=False)
+print(f"\n✓ Résultats sauvegardés dans: {output_path}")
