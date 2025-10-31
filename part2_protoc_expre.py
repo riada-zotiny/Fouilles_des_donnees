@@ -1,4 +1,4 @@
-# --------------- PARTIE 2 Protocole experimental avec des petits jeux des données 
+# --------------- PARTIE 2 Protocole experimental avec des petits jeux des données  -----------------
 import os
 import numpy as np
 import pandas as pd
@@ -33,11 +33,9 @@ datasets = {
 }
 
 
-# Dictionnaire des détecteurs qui seront utilisés 
 
 detecteurs = {'HBOS': HBOS(), 'CBLOF': CBLOF(), 'IForest': IForest(), 'KNN' : KNN(), 'LOF' : LOF() , 'OCSVM': OCSVM() }
 
-# Creation des dataFrames pour stocker les resultats de chaque métrique 
 
 df_columns = ['Jeu de données' , 'HBOS' , 'CBLOF' , 'IForest' , 'KNN' , 'LOF' , 'OCSVM']
 precision_df = pd.DataFrame(columns=df_columns)
@@ -46,17 +44,14 @@ time_df = pd.DataFrame(columns=df_columns)
 aucroc_df = pd.DataFrame(columns=df_columns)
 aucpr_df = pd.DataFrame(columns=df_columns)
 
-# Commencant a traiter chaque Jeu de données 
+
 
 for data_name , data_path in datasets.items(): 
     print("Data name is " , data_name , " !")
-    #charger les données 
     data = pd.read_csv(data_path).to_numpy()
-    drop_label = data[:, :-1] # Supprimer le classifieur (Dernier colonne)
+    drop_label = data[:, :-1] 
     X_data = drop_label 
-    y_label = data[:,-1] # Garder uniquement la dernier colonne
-
-
+    y_label = data[:,-1] 
     precisions_list = [data_name]
     recalls_list = [data_name]
     times_list = [data_name]
@@ -66,28 +61,17 @@ for data_name , data_path in datasets.items():
     for detector_name , detector in detecteurs.items():
         print("Detector name is " , detector_name , " !")
         start = perf_counter()
-        # ajustement aux données
         detector.fit(X_data)
-        # scores d'anomalies
         scores = detector.decision_scores_
-        # labels prédits
         y_pred = detector.labels_
         end = perf_counter()
         elapsed = round(end - start, ndigits=6)
         print("Execution time:", elapsed)
-
-        # matrice de confusion
         matrice = confusion_matrix(y_label, y_pred)
         print(matrice)
-        
-        # précision et rappel (classe positive, i.e., les anomalies)
         precision = round(precision_score(y_label, y_pred), ndigits=5)
         recall = round(recall_score(y_label, y_pred), ndigits=5)
-         
-        # aire sous la courbe ROC
         aucroc = round(roc_auc_score(y_label, scores), ndigits=5)
-        
-        # aire sous la courbe PR
         precisions, recalls, _ = precision_recall_curve(y_label, scores)
         aucpr = round(auc(recalls, precisions), ndigits=5)
         

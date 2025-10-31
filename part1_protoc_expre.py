@@ -1,8 +1,8 @@
-
+# --------------- PARTIE 1 Analyse des jeux des données ----------------------------
 import pandas as pd
 import os
 
-# Charger les données
+
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(current_dir, "data")
@@ -97,7 +97,6 @@ print(dect_anomalies_http , perc_dect_anomalies_http)
 
 from tabulate import tabulate
 
-# Création des données pour le tableau
 headers = ["Jeu de données", "Nbre d'observations", "Nbre de variables", "Nbre d'anomalies", "Pourcentage d'anomalies"]
 table_data = [
     ["Satellite", nbs_observation_satellite, nbs_variables_satellite, dect_anomalies_satellite, f"{perc_dect_anomalies_satellite:.2f}%"],
@@ -108,7 +107,5 @@ table_data = [
     ["Donors", nbs_observation_donors, nbs_variables_donors, dect_anomalies_donors, f"{perc_dect_anomalies_donors:.2f}%"],
     ["Http", nbs_observation_http, nbs_variables_http, dect_anomalies_http, f"{perc_dect_anomalies_http:.2f}%"]
 ]
-
-# Affichage du tableau avec tabulate
 print("\nRésultats finaux:")
 print(tabulate(table_data, headers=headers, tablefmt="grid"))
