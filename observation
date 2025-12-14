@@ -1,0 +1,1000 @@
+
+" partie compilation simple "
+python.exe "c:/Users/amaly/OneDrive/Bureau/Amu M2/Fouille des données/Tp_durand/Fouilles_des_donnees/part2_protoc_expre.py"
+Data name is  satellite  !
+Detector name is  HBOS  !
+Execution time: 2.656907
+[[4575  450]
+ [  15   60]]
+Precision:0.11765 
+Recall:0.8
+AUCROC:0.91892
+AUCPR:0.54413
+Detector name is  CBLOF  !
+Execution time: 2.701362
+[[4580  445]
+ [  10   65]]
+Precision:0.12745 
+Recall:0.86667
+AUCROC:0.96223
+AUCPR:0.60363
+Detector name is  IForest  !
+Execution time: 0.13453
+[[4579  446]
+ [  11   64]]
+Precision:0.12549
+Recall:0.85333
+AUCROC:0.94797
+AUCPR:0.62976
+Detector name is  KNN  !
+Execution time: 0.04355
+[[4584  441]
+ [   6   69]]
+Precision:0.13529
+Recall:0.92
+AUCROC:0.97078
+AUCPR:0.44694
+Detector name is  LOF  !
+Execution time: 0.044845
+[[4558  467]
+ [  32   43]]
+Precision:0.08431
+Recall:0.57333
+AUCROC:0.67575
+AUCPR:0.18325
+Detector name is  OCSVM  !
+Execution time: 1.108253
+[[4577  448]
+ [  13   62]]
+Precision:0.12157
+Recall:0.82667
+AUCROC:0.93267
+AUCPR:0.62098
+
+------------------------------------------------------------------
+Data name is  breastcancer  !
+Detector name is  HBOS  !
+Execution time: 0.002638
+[[330  27]
+ [  0  10]]
+Precision:0.27027
+Recall:1.0
+AUCROC:0.97759
+AUCPR:0.50759
+Detector name is  CBLOF  !
+Execution time: 0.006538
+[[329  28]
+ [  1   9]]
+Precision:0.24324
+Recall:0.9
+AUCROC:0.97815
+AUCPR:0.57791
+Detector name is  IForest  !
+Execution time: 0.081491
+[[330  27]
+ [  0  10]]
+Precision:0.27027
+Recall:1.0
+AUCROC:0.98824
+AUCPR:0.71023
+Detector name is  KNN  !
+Execution time: 0.011978
+[[330  27]
+ [  0  10]]
+Precision:0.27027
+Recall:1.0
+AUCROC:0.97815
+AUCPR:0.56365
+Detector name is  LOF  !
+Execution time: 0.010227
+[[330  27]
+ [  0  10]]
+Precision:0.27027
+Recall:1.0
+AUCROC:0.98459
+AUCPR:0.65735
+Detector name is  OCSVM  !
+Execution time: 0.008498
+[[330  27]
+ [  0  10]]
+Precision:0.27027
+Recall:1.0
+AUCROC:0.98151
+AUCPR:0.49525
+
+------------------------------------------------------------------
+Data name is  speech  !
+Detector name is  HBOS  !
+Execution time: 0.065882
+[[3262  363]
+ [  55    6]]
+Precision:0.01626
+Recall:0.09836
+AUCROC:0.4757
+AUCPR:0.01894
+Detector name is  CBLOF  !
+Execution time: 0.068731
+[[3263  362]
+ [  54    7]]
+Precision:0.01897
+Recall:0.11475
+AUCROC:0.47741
+AUCPR:0.01697
+Detector name is  IForest  !
+Execution time: 0.141519
+[[3263  362]
+ [  54    7]]
+Precision:0.01897
+Recall:0.11475
+AUCROC:0.49804
+AUCPR:0.01747
+Detector name is  KNN  !
+Execution time: 0.141679
+[[3263  362]
+ [  54    7]]
+Precision:0.01897
+Recall:0.11475
+AUCROC:0.48621
+AUCPR:0.01788
+Detector name is  LOF  !
+Execution time: 0.107044
+[[3265  360]
+ [  52    9]]
+Precision:0.02439 
+Recall:0.14754
+AUCROC:0.50749
+AUCPR:0.02185
+Detector name is  OCSVM  !
+Execution time: 1.851276
+[[3263  362]
+ [  54    7]]
+Precision:0.01897
+Recall:0.11475
+AUCROC:0.46658
+AUCPR:0.01679
+
+------------------------------------------------------------------
+Data name is  shuttle  !
+Detector name is  HBOS  !
+Execution time: 0.011503
+[[41972  3614]
+ [   23   855]]
+Precision:0.19132 
+Recall:0.9738
+AUCROC:0.98425
+AUCPR:0.95065
+Detector name is  CBLOF  !
+Execution time: 0.04372
+[[41810  3776]
+ [    7   871]]
+Precision:0.18743 
+Recall:0.99203
+AUCROC:0.99669
+AUCPR:0.80659
+Detector name is  IForest  !
+Execution time: 0.45846
+[[41807  3779]
+ [   10   868]]
+Precision:0.18679 
+Recall:0.98861
+AUCROC:0.99799
+AUCPR:0.98063
+Detector name is  KNN  !
+Execution time: 2.453149
+[[41531  4055]
+ [  286   592]]
+Precision:0.12739 
+Recall:0.67426
+AUCROC:0.89595
+AUCPR:0.17992
+Detector name is  LOF  !
+Execution time: 4.94333
+[[41035  4551]
+ [  782    96]]
+Precision:0.02066 
+Recall:0.10934
+AUCROC:0.48006
+AUCPR:0.04738
+Detector name is  OCSVM  !
+Execution time: 111.757207
+[[41802  3784]
+ [   15   863]]
+Precision:0.18571 
+Recall:0.98292
+AUCROC:0.99464
+AUCPR:0.7796
+
+------------------------------------------------------------------
+Précision
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite  0.11765  0.12745  0.12549  0.13529  0.08431  0.12157
+1   breastcancer  0.27027  0.24324  0.27027  0.27027  0.27027  0.27027
+2         speech  0.01626  0.01897  0.01897  0.01897  0.02439  0.01897
+3        shuttle  0.19132  0.18743  0.18679  0.12739  0.02066  0.18571
+
+Rappel
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite      0.8  0.86667  0.85333     0.92  0.57333  0.82667
+1   breastcancer      1.0      0.9      1.0      1.0      1.0      1.0
+2         speech  0.09836  0.11475  0.11475  0.11475  0.14754  0.11475
+3        shuttle   0.9738  0.99203  0.98861  0.67426  0.10934  0.98292
+
+AUC ROC
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite  0.91892  0.96223  0.94797  0.97078  0.67575  0.93267
+1   breastcancer  0.97759  0.97815  0.98824  0.97815  0.98459  0.98151
+2         speech   0.4757  0.47741  0.49804  0.48621  0.50749  0.46658
+3        shuttle  0.98425  0.99669  0.99799  0.89595  0.48006  0.99464
+
+AUC PR
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite  0.54413  0.60363  0.62976  0.44694  0.18325  0.62098
+1   breastcancer  0.50759  0.57791  0.71023  0.56365  0.65735  0.49525
+2         speech  0.01894  0.01697  0.01747  0.01788  0.02185  0.01679
+3        shuttle  0.95065  0.80659  0.98063  0.17992  0.04738   0.7796
+
+Temps d exécution
+   Jeu de données      HBOS     CBLOF   IForest       KNN       LOF       OCSVM
+0      satellite  2.656907  2.701362   0.13453   0.04355  0.044845    1.108253
+1   breastcancer  0.002638  0.006538  0.081491  0.011978  0.010227    0.008498
+2         speech  0.065882  0.068731  0.141519  0.141679  0.107044    1.851276
+3        shuttle  0.011503   0.04372   0.45846  2.453149   4.94333  111.757207
+
+
+" partie moyenne iterations "
+PS C:\Users\amaly\OneDrive\Bureau\Amu M2\Fouille des données\Tp_durand\Fouilles_des_donnees> & C:\Users\amaly\AppData\Local\Programs\Python\Python313\python.exe "c:/Users/amaly/OneDrive/Bureau/Amu M2/Fouille des données/Tp_durand/Fouilles_des_donnees/part5_protoc_expre.py"
+Data name is  satellite  !
+Detector name is  HBOS  !
+    Itération 1/10... Terminée (temps: 7.262916s)
+    Itération 2/10... Terminée (temps: 0.03487s)
+    Itération 3/10... Terminée (temps: 0.025101s)
+    Itération 4/10... Terminée (temps: 0.026446s)
+    Itération 5/10... Terminée (temps: 0.028731s)
+    Itération 6/10... Terminée (temps: 0.024854s)
+    Itération 7/10... Terminée (temps: 0.030398s)
+    Itération 8/10... Terminée (temps: 0.025158s)
+    Itération 9/10... Terminée (temps: 0.022705s)
+    Itération 10/10... Terminée (temps: 0.023262s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.11765
+    Rappel: 0.8
+    AUC ROC: 0.91892
+    AUC PR: 0.54413
+    Temps: 0.750444s
+Detector name is  CBLOF  !
+    Itération 1/10... Terminée (temps: 6.581477s)
+    Itération 2/10... Terminée (temps: 0.025547s)
+    Itération 3/10... Terminée (temps: 0.02181s)
+    Itération 4/10... Terminée (temps: 0.022123s)
+    Itération 5/10... Terminée (temps: 0.020776s)
+    Itération 6/10... Terminée (temps: 0.025189s)
+    Itération 7/10... Terminée (temps: 0.028037s)
+    Itération 8/10... Terminée (temps: 0.017967s)
+    Itération 9/10... Terminée (temps: 0.016363s)
+    Itération 10/10... Terminée (temps: 0.015824s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.12118
+    Rappel: 0.824
+    AUC ROC: 0.95578
+    AUC PR: 0.60703
+    Temps: 0.677511s
+Detector name is  IForest  !
+    Itération 1/10... Terminée (temps: 0.250359s)
+    Itération 2/10... Terminée (temps: 0.226949s)
+    Itération 3/10... Terminée (temps: 0.228624s)
+    Itération 4/10... Terminée (temps: 0.245047s)
+    Itération 5/10... Terminée (temps: 0.270666s)
+    Itération 6/10... Terminée (temps: 0.321642s)
+    Itération 7/10... Terminée (temps: 0.280063s)
+    Itération 8/10... Terminée (temps: 0.250593s)
+    Itération 9/10... Terminée (temps: 0.232959s)
+    Itération 10/10... Terminée (temps: 0.266467s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.12275
+    Rappel: 0.83466
+    AUC ROC: 0.94899
+    AUC PR: 0.64473
+    Temps: 0.257337s
+Detector name is  KNN  !
+    Itération 1/10... Terminée (temps: 0.071879s)
+    Itération 2/10... Terminée (temps: 0.061104s)
+    Itération 3/10... Terminée (temps: 0.058142s)
+    Itération 4/10... Terminée (temps: 0.055257s)
+    Itération 5/10... Terminée (temps: 0.058747s)
+    Itération 6/10... Terminée (temps: 0.057104s)
+    Itération 7/10... Terminée (temps: 0.067148s)
+    Itération 8/10... Terminée (temps: 0.062697s)
+    Itération 9/10... Terminée (temps: 0.058977s)
+    Itération 10/10... Terminée (temps: 0.06454s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.13529
+    Rappel: 0.92
+    AUC ROC: 0.97078
+    AUC PR: 0.44694
+    Temps: 0.06156s
+Detector name is  LOF  !
+    Itération 1/10... Terminée (temps: 0.069122s)
+    Itération 2/10... Terminée (temps: 0.070907s)
+    Itération 3/10... Terminée (temps: 0.070148s)
+    Itération 4/10... Terminée (temps: 0.06673s)
+    Itération 5/10... Terminée (temps: 0.067118s)
+    Itération 6/10... Terminée (temps: 0.067545s)
+    Itération 7/10... Terminée (temps: 0.065515s)
+    Itération 8/10... Terminée (temps: 0.066779s)
+    Itération 9/10... Terminée (temps: 0.069469s)
+    Itération 10/10... Terminée (temps: 0.067176s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.08431
+    Rappel: 0.57333
+    AUC ROC: 0.67575
+    AUC PR: 0.18325
+    Temps: 0.068051s
+Detector name is  OCSVM  !
+    Itération 1/10... Terminée (temps: 2.052083s)
+    Itération 2/10... Terminée (temps: 2.054306s)
+    Itération 3/10... Terminée (temps: 2.591697s)
+    Itération 4/10... Terminée (temps: 2.650477s)
+    Itération 5/10... Terminée (temps: 3.546s)
+    Itération 6/10... Terminée (temps: 3.600697s)
+    Itération 7/10... Terminée (temps: 2.684816s)
+    Itération 8/10... Terminée (temps: 2.999206s)
+    Itération 9/10... Terminée (temps: 2.948205s)
+    Itération 10/10... Terminée (temps: 2.802847s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.12157
+    Rappel: 0.82667
+    AUC ROC: 0.93267
+    AUC PR: 0.62098
+    Temps: 2.793033s
+Data name is  breastcancer  !
+Detector name is  HBOS  !
+    Itération 1/10... Terminée (temps: 0.008196s)
+    Itération 2/10... Terminée (temps: 0.006425s)
+    Itération 3/10... Terminée (temps: 0.006958s)
+    Itération 4/10... Terminée (temps: 0.007375s)
+    Itération 5/10... Terminée (temps: 0.006678s)
+    Itération 6/10... Terminée (temps: 0.007945s)
+    Itération 7/10... Terminée (temps: 0.006856s)
+    Itération 8/10... Terminée (temps: 0.008121s)
+    Itération 9/10... Terminée (temps: 0.007467s)
+    Itération 10/10... Terminée (temps: 0.006662s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.27027
+    Rappel: 1.0
+    AUC ROC: 0.97759
+    AUC PR: 0.50759
+    Temps: 0.007268s
+Detector name is  CBLOF  !
+    Itération 1/10... Terminée (temps: 0.017362s)
+    Itération 2/10... Terminée (temps: 0.013062s)
+    Itération 3/10... Terminée (temps: 0.014758s)
+    Itération 4/10... Terminée (temps: 0.014296s)
+    Itération 5/10... Terminée (temps: 0.012022s)
+    Itération 6/10... Terminée (temps: 0.008772s)
+    Itération 7/10... Terminée (temps: 0.009696s)
+    Itération 8/10... Terminée (temps: 0.009361s)
+    Itération 9/10... Terminée (temps: 0.009175s)
+    Itération 10/10... Terminée (temps: 0.008221s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.25676
+    Rappel: 0.95
+    AUC ROC: 0.97821
+    AUC PR: 0.57022
+    Temps: 0.011672s
+Detector name is  IForest  !
+    Itération 1/10... Terminée (temps: 0.152483s)
+    Itération 2/10... Terminée (temps: 0.162457s)
+    Itération 3/10... Terminée (temps: 0.193444s)
+    Itération 4/10... Terminée (temps: 0.178344s)
+    Itération 5/10... Terminée (temps: 0.229747s)
+    Itération 6/10... Terminée (temps: 0.238257s)
+    Itération 7/10... Terminée (temps: 0.241537s)
+    Itération 8/10... Terminée (temps: 0.256254s)
+    Itération 9/10... Terminée (temps: 0.212435s)
+    Itération 10/10... Terminée (temps: 0.210491s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.27027
+    Rappel: 1.0
+    AUC ROC: 0.9821
+    AUC PR: 0.63719
+    Temps: 0.207545s
+Detector name is  KNN  !
+    Itération 1/10... Terminée (temps: 0.030336s)
+    Itération 2/10... Terminée (temps: 0.029017s)
+    Itération 3/10... Terminée (temps: 0.025677s)
+    Itération 4/10... Terminée (temps: 0.0185s)
+    Itération 5/10... Terminée (temps: 0.017512s)
+    Itération 6/10... Terminée (temps: 0.017295s)
+    Itération 7/10... Terminée (temps: 0.016086s)
+    Itération 8/10... Terminée (temps: 0.016409s)
+    Itération 9/10... Terminée (temps: 0.016545s)
+    Itération 10/10... Terminée (temps: 0.01517s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.27027
+    Rappel: 1.0
+    AUC ROC: 0.97815
+    AUC PR: 0.56365
+    Temps: 0.020255s
+Detector name is  LOF  !
+    Itération 1/10... Terminée (temps: 0.014867s)
+    Itération 2/10... Terminée (temps: 0.015841s)
+    Itération 3/10... Terminée (temps: 0.016238s)
+    Itération 4/10... Terminée (temps: 0.014781s)
+    Itération 5/10... Terminée (temps: 0.013909s)
+    Itération 6/10... Terminée (temps: 0.014624s)
+    Itération 7/10... Terminée (temps: 0.015682s)
+    Itération 8/10... Terminée (temps: 0.01458s)
+    Itération 9/10... Terminée (temps: 0.014268s)
+    Itération 10/10... Terminée (temps: 0.017365s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.27027
+    Rappel: 1.0
+    AUC ROC: 0.98459
+    AUC PR: 0.65735
+    Temps: 0.015215s
+Detector name is  OCSVM  !
+    Itération 1/10... Terminée (temps: 0.015033s)
+    Itération 2/10... Terminée (temps: 0.018111s)
+    Itération 3/10... Terminée (temps: 0.010763s)
+    Itération 4/10... Terminée (temps: 0.012641s)
+    Itération 5/10... Terminée (temps: 0.012451s)
+    Itération 6/10... Terminée (temps: 0.011036s)
+    Itération 7/10... Terminée (temps: 0.010702s)
+    Itération 8/10... Terminée (temps: 0.010772s)
+    Itération 9/10... Terminée (temps: 0.010646s)
+    Itération 10/10... Terminée (temps: 0.010965s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.27027
+    Rappel: 1.0
+    AUC ROC: 0.98151
+    AUC PR: 0.49525
+    Temps: 0.012312s
+Data name is  speech  !
+Detector name is  HBOS  !
+    Itération 1/10... Terminée (temps: 0.177371s)
+    Itération 2/10... Terminée (temps: 0.178189s)
+    Itération 3/10... Terminée (temps: 0.162967s)
+    Itération 4/10... Terminée (temps: 0.172393s)
+    Itération 5/10... Terminée (temps: 0.182963s)
+    Itération 6/10... Terminée (temps: 0.181197s)
+    Itération 7/10... Terminée (temps: 0.169836s)
+    Itération 8/10... Terminée (temps: 0.179374s)
+    Itération 9/10... Terminée (temps: 0.169953s)
+    Itération 10/10... Terminée (temps: 0.180893s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.01626
+    Rappel: 0.09836
+    AUC ROC: 0.4757
+    AUC PR: 0.01894
+    Temps: 0.175514s
+Detector name is  CBLOF  !
+    Itération 1/10... Terminée (temps: 0.16552s)
+    Itération 2/10... Terminée (temps: 0.091678s)
+    Itération 3/10... Terminée (temps: 0.160506s)
+    Itération 4/10... Terminée (temps: 0.100172s)
+    Itération 5/10... Terminée (temps: 0.079318s)
+    Itération 6/10... Terminée (temps: 0.078074s)
+    Itération 7/10... Terminée (temps: 0.090962s)
+    Itération 8/10... Terminée (temps: 0.098474s)
+    Itération 9/10... Terminée (temps: 0.090572s)
+    Itération 10/10... Terminée (temps: 0.085289s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.01978
+    Rappel: 0.11967
+    AUC ROC: 0.47034
+    AUC PR: 0.01674
+    Temps: 0.104056s
+Detector name is  IForest  !
+    Itération 1/10... Terminée (temps: 0.27718s)
+    Itération 2/10... Terminée (temps: 0.302206s)
+    Itération 3/10... Terminée (temps: 0.303861s)
+    Itération 4/10... Terminée (temps: 0.325569s)
+    Itération 5/10... Terminée (temps: 0.325104s)
+    Itération 6/10... Terminée (temps: 0.383573s)
+    Itération 7/10... Terminée (temps: 0.322707s)
+    Itération 8/10... Terminée (temps: 0.334403s)
+    Itération 9/10... Terminée (temps: 0.331078s)
+    Itération 10/10... Terminée (temps: 0.320195s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.01951
+    Rappel: 0.11803
+    AUC ROC: 0.47451
+    AUC PR: 0.01896
+    Temps: 0.322588s
+Detector name is  KNN  !
+    Itération 1/10... Terminée (temps: 0.316987s)
+    Itération 2/10... Terminée (temps: 0.211877s)
+    Itération 3/10... Terminée (temps: 0.233563s)
+    Itération 4/10... Terminée (temps: 0.237903s)
+    Itération 5/10... Terminée (temps: 0.239104s)
+    Itération 6/10... Terminée (temps: 0.233297s)
+    Itération 7/10... Terminée (temps: 0.216554s)
+    Itération 8/10... Terminée (temps: 0.217168s)
+    Itération 9/10... Terminée (temps: 0.231251s)
+    Itération 10/10... Terminée (temps: 0.233465s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.01897
+    Rappel: 0.11475
+    AUC ROC: 0.48621
+    AUC PR: 0.01788
+    Temps: 0.237117s
+Detector name is  LOF  !
+    Itération 1/10... Terminée (temps: 0.13822s)
+    Itération 2/10... Terminée (temps: 0.12665s)
+    Itération 3/10... Terminée (temps: 0.137166s)
+    Itération 4/10... Terminée (temps: 0.145034s)
+    Itération 5/10... Terminée (temps: 0.152366s)
+    Itération 6/10... Terminée (temps: 0.136132s)
+    Itération 7/10... Terminée (temps: 0.150679s)
+    Itération 8/10... Terminée (temps: 0.147492s)
+    Itération 9/10... Terminée (temps: 0.152099s)
+    Itération 10/10... Terminée (temps: 0.150155s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.02439
+    Rappel: 0.14754
+    AUC ROC: 0.50749
+    AUC PR: 0.02185
+    Temps: 0.143599s
+Detector name is  OCSVM  !
+    Itération 1/10... Terminée (temps: 3.921208s)
+    Itération 2/10... Terminée (temps: 4.728781s)
+    Itération 3/10... Terminée (temps: 4.919971s)
+    Itération 4/10... Terminée (temps: 4.732434s)
+    Itération 5/10... Terminée (temps: 4.802099s)
+    Itération 6/10... Terminée (temps: 4.869287s)
+    Itération 7/10... Terminée (temps: 4.885541s)
+    Itération 8/10... Terminée (temps: 4.948245s)
+    Itération 9/10... Terminée (temps: 5.150529s)
+    Itération 10/10... Terminée (temps: 4.985447s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.01897
+    Rappel: 0.11475
+    AUC ROC: 0.46658
+    AUC PR: 0.01679
+    Temps: 4.794354s
+Data name is  shuttle  !
+Detector name is  HBOS  !
+    Itération 1/10... Terminée (temps: 0.030197s)
+    Itération 2/10... Terminée (temps: 0.027843s)
+    Itération 3/10... Terminée (temps: 0.027688s)
+    Itération 4/10... Terminée (temps: 0.027643s)
+    Itération 5/10... Terminée (temps: 0.028964s)
+    Itération 6/10... Terminée (temps: 0.023212s)
+    Itération 7/10... Terminée (temps: 0.030779s)
+    Itération 8/10... Terminée (temps: 0.03209s)
+    Itération 9/10... Terminée (temps: 0.039102s)
+    Itération 10/10... Terminée (temps: 0.038447s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.19132
+    Rappel: 0.9738
+    AUC ROC: 0.98425
+    AUC PR: 0.95065
+    Temps: 0.030597s
+Detector name is  CBLOF  !
+    Itération 1/10... Terminée (temps: 0.081709s)
+    Itération 2/10... Terminée (temps: 0.053042s)
+    Itération 3/10... Terminée (temps: 0.055823s)
+    Itération 4/10... Terminée (temps: 0.047889s)
+    Itération 5/10... Terminée (temps: 0.050764s)
+    Itération 6/10... Terminée (temps: 0.047489s)
+    Itération 7/10... Terminée (temps: 0.054461s)
+    Itération 8/10... Terminée (temps: 0.050627s)
+    Itération 9/10... Terminée (temps: 0.050753s)
+    Itération 10/10... Terminée (temps: 0.061553s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.1875
+    Rappel: 0.99237
+    AUC ROC: 0.99652
+    AUC PR: 0.80924
+    Temps: 0.055411s
+Detector name is  IForest  !
+    Itération 1/10... Terminée (temps: 1.174984s)
+    Itération 2/10... Terminée (temps: 1.185048s)
+    Itération 3/10... Terminée (temps: 1.178767s)
+    Itération 4/10... Terminée (temps: 1.284829s)
+    Itération 5/10... Terminée (temps: 1.221573s)
+    Itération 6/10... Terminée (temps: 1.166722s)
+    Itération 7/10... Terminée (temps: 1.203522s)
+    Itération 8/10... Terminée (temps: 1.179143s)
+    Itération 9/10... Terminée (temps: 1.2278s)
+    Itération 10/10... Terminée (temps: 1.222483s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.18652
+    Rappel: 0.98713
+    AUC ROC: 0.99718
+    AUC PR: 0.97521
+    Temps: 1.204487s
+Detector name is  KNN  !
+    Itération 1/10... Terminée (temps: 5.885752s)
+    Itération 2/10... Terminée (temps: 6.036381s)
+    Itération 3/10... Terminée (temps: 5.901719s)
+    Itération 4/10... Terminée (temps: 5.968734s)
+    Itération 5/10... Terminée (temps: 5.985985s)
+    Itération 6/10... Terminée (temps: 5.696221s)
+    Itération 7/10... Terminée (temps: 5.929926s)
+    Itération 8/10... Terminée (temps: 5.889422s)
+    Itération 9/10... Terminée (temps: 5.932161s)
+    Itération 10/10... Terminée (temps: 5.91929s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.12739
+    Rappel: 0.67426
+    AUC ROC: 0.89595
+    AUC PR: 0.17992
+    Temps: 5.914559s
+Detector name is  LOF  !
+    Itération 1/10... Terminée (temps: 11.568856s)
+    Itération 2/10... Terminée (temps: 11.797926s)
+    Itération 3/10... Terminée (temps: 11.767817s)
+    Itération 4/10... Terminée (temps: 11.728653s)
+    Itération 5/10... Terminée (temps: 12.136993s)
+    Itération 6/10... Terminée (temps: 12.075568s)
+    Itération 7/10... Terminée (temps: 12.248356s)
+    Itération 8/10... Terminée (temps: 12.102638s)
+    Itération 9/10... Terminée (temps: 11.657374s)
+    Itération 10/10... Terminée (temps: 11.834351s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.02066
+    Rappel: 0.10934
+    AUC ROC: 0.48006
+    AUC PR: 0.04738
+    Temps: 11.891853s
+Detector name is  OCSVM  !
+    Itération 1/10... Terminée (temps: 198.475564s)
+    Itération 2/10... Terminée (temps: 198.120226s)
+    Itération 3/10... Terminée (temps: 183.044356s)
+    Itération 4/10... Terminée (temps: 156.425917s)
+    Itération 5/10... Terminée (temps: 410.774379s)
+    Itération 6/10... Terminée (temps: 369.713156s)
+    Itération 7/10... Terminée (temps: 245.541874s)
+    Itération 8/10... Terminée (temps: 205.330276s)
+    Itération 9/10... Terminée (temps: 204.407533s)
+    Itération 10/10... Terminée (temps: 247.306797s)
+
+  Résultats moyens sur 10 itérations:
+    Précision: 0.18571
+    Rappel: 0.98292
+    AUC ROC: 0.99464
+    AUC PR: 0.7796
+    Temps: 241.914008s
+
+======================================================================
+RÉSULTATS FINAUX (Moyennes sur 10 itérations)
+======================================================================
+
+Précision
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite  0.11765  0.12118  0.12275  0.13529  0.08431  0.12157
+1   breastcancer  0.27027  0.25676  0.27027  0.27027  0.27027  0.27027
+2         speech  0.01626  0.01978  0.01951  0.01897  0.02439  0.01897
+3        shuttle  0.19132   0.1875  0.18652  0.12739  0.02066  0.18571
+
+Rappel
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite      0.8    0.824  0.83466     0.92  0.57333  0.82667
+1   breastcancer      1.0     0.95      1.0      1.0      1.0      1.0
+2         speech  0.09836  0.11967  0.11803  0.11475  0.14754  0.11475
+3        shuttle   0.9738  0.99237  0.98713  0.67426  0.10934  0.98292
+
+AUC ROC
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite  0.91892  0.95578  0.94899  0.97078  0.67575  0.93267
+1   breastcancer  0.97759  0.97821   0.9821  0.97815  0.98459  0.98151
+2         speech   0.4757  0.47034  0.47451  0.48621  0.50749  0.46658
+3        shuttle  0.98425  0.99652  0.99718  0.89595  0.48006  0.99464
+
+AUC PR
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF    OCSVM
+0      satellite  0.54413  0.60703  0.64473  0.44694  0.18325  0.62098
+1   breastcancer  0.50759  0.57022  0.63719  0.56365  0.65735  0.49525
+2         speech  0.01894  0.01674  0.01896  0.01788  0.02185  0.01679
+3        shuttle  0.95065  0.80924  0.97521  0.17992  0.04738   0.7796
+
+Temps d exécution
+   Jeu de données      HBOS     CBLOF   IForest       KNN        LOF  \
+0      satellite  0.750444  0.677511  0.257337   0.06156   0.068051
+1   breastcancer  0.007268  0.011672  0.207545  0.020255   0.015215
+2         speech  0.175514  0.104056  0.322588  0.237117   0.143599
+3        shuttle  0.030597  0.055411  1.204487  5.914559  11.891853
+
+        OCSVM
+0    2.793033
+1    0.012312
+2    4.794354
+3  241.914008
+
+
+
+
+✓ Résultats sauvegardés dans: c:\Users\amaly\OneDrive\Bureau\Amu M2\Fouille des données\Tp_durand\Fouilles_de
+
+
+" partie donnes grosses"
+PS C:\Users\amaly\OneDrive\Bureau\Amu M2\Fouille des données\Tp_durand\Fouilles_des_donnees> & C:\Users\amaly\AppData\Local\Programs\Python\Python313\python.exe "c:/Users/amaly/OneDrive/Bureau/Amu M2/Fouille des données/Tp_durand/Fouilles_des_donnees/part3_protoc_expre.py"
+Data name is  donors  !
+Detector name is  HBOS  !
+Execution time: 2.421193
+[[574231   8385]
+ [ 34896   1814]]
+Precision:0.17786 
+Recall:0.04941
+AUCROC:0.71866
+AUCPR:0.10946
+Detector name is  CBLOF  !
+Execution time: 2.761401
+[[526774  55842]
+ [ 30620   6090]]
+Precision:0.09833 
+AUCROC:0.71866
+AUCPR:0.10946
+Detector name is  CBLOF  !
+Execution time: 2.761401
+[[526774  55842]
+ [ 30620   6090]]
+Precision:0.09833
+Detector name is  CBLOF  !
+Execution time: 2.761401
+[[526774  55842]
+ [ 30620   6090]]
+Precision:0.09833
+Execution time: 2.761401
+[[526774  55842]
+ [ 30620   6090]]
+Precision:0.09833
+ [ 30620   6090]]
+Precision:0.09833
+Precision:0.09833
+Recall:0.16589
+AUCROC:0.76814
+AUCPR:0.11641
+Detector name is  IForest  !
+Execution time: 6.80535
+Execution time: 6.80535
+[[528243  54373]
+ [ 29366   7344]]
+Precision:0.11899
+Recall:0.20005
+AUCROC:0.78716
+AUCPR:0.13475
+Detector name is  KNN  !
+Execution time: 1252.88561
+[[544918  37698]
+ [ 26107  10603]]
+Precision:0.21952 
+Recall:0.28883
+AUCROC:0.61175
+AUCPR:0.15827
+Detector name is  LOF  !
+Execution time: 1789.521812
+[[537555  45061]
+ [ 24552  12158]]
+Precision:0.21248 
+Recall:0.33119
+AUCROC:0.59743
+AUCPR:0.14566
+
+------------------------------------------------------------------
+Data name is  fraud  !
+Detector name is  HBOS  !
+Execution time: 0.524694
+[[256272  28043]
+ [    54    438]]
+Precision:0.01538 
+Recall:0.89024
+AUCROC:0.95293
+AUCPR:0.20812
+Detector name is  CBLOF  !
+Execution time: 1.084801
+[[256274  28041]
+ [    52    440]]
+Precision:0.01545 
+Recall:0.89431
+AUCROC:0.95227
+AUCPR:0.39734
+Detector name is  IForest  !
+Execution time: 4.739272
+[[256280  28035]
+ [    46    446]]
+Precision:0.01566 
+Recall:0.9065
+AUCROC:0.95265
+AUCPR:0.1518
+Detector name is  KNN  !
+Execution time: 253.624961
+[[256249  28066]
+ [    77    415]]
+Precision:0.01457 
+Recall:0.8435
+AUCROC:0.93424
+AUCPR:0.11057
+Detector name is  LOF  !
+Execution time: 219.226809
+[[255885  28430]
+ [   441     51]]
+Precision:0.00179 
+Recall:0.10366
+AUCROC:0.47504
+AUCPR:0.0016
+
+------------------------------------------------------------------
+Data name is  http  !
+Detector name is  HBOS  !
+Execution time: 1.114948
+[[557768  61278]
+ [   320    732]]
+Precision:0.0118 
+Recall:0.69582
+AUCROC:0.90207
+AUCPR:0.02295
+Detector name is  CBLOF  !
+Execution time: 1.90634
+[[558088  60958]
+ [     0   1052]]
+Precision:0.01697 
+Recall:1.0
+AUCROC:0.99957
+AUCPR:0.68248
+Recall:0.69582
+AUCROC:0.90207
+AUCPR:0.02295
+Detector name is  CBLOF  !
+Execution time: 1.90634
+[[558088  60958]
+ [     0   1052]]
+Precision:0.01697
+Recall:1.0
+AUCROC:0.99957
+AUCPR:0.68248
+AUCROC:0.90207
+AUCPR:0.02295
+Detector name is  CBLOF  !
+Execution time: 1.90634
+[[558088  60958]
+ [     0   1052]]
+Precision:0.01697
+Recall:1.0
+AUCROC:0.99957
+AUCPR:0.68248
+Detector name is  IForest  !
+Execution time: 7.603484
+[[558087  60959]
+ [     2   1050]]
+Precision:0.01693
+Recall:0.9981
+AUCROC:0.97445
+AUCPR:0.53046
+Execution time: 1.90634
+[[558088  60958]
+ [     0   1052]]
+Precision:0.01697
+Recall:1.0
+AUCROC:0.99957
+AUCPR:0.68248
+Detector name is  IForest  !
+Execution time: 7.603484
+[[558087  60959]
+ [     2   1050]]
+Precision:0.01693
+Recall:0.9981
+AUCROC:0.97445
+AUCPR:0.53046
+Recall:1.0
+AUCROC:0.99957
+AUCPR:0.68248
+Detector name is  IForest  !
+Execution time: 7.603484
+[[558087  60959]
+ [     2   1050]]
+Precision:0.01693
+Recall:0.9981
+AUCROC:0.97445
+AUCPR:0.53046
+Detector name is  KNN  !
+Execution time: 621.513734
+Detector name is  IForest  !
+Execution time: 7.603484
+[[558087  60959]
+ [     2   1050]]
+Precision:0.01693
+Recall:0.9981
+AUCROC:0.97445
+AUCPR:0.53046
+Detector name is  KNN  !
+Execution time: 621.513734
+[[557795  61251]
+ [   293    759]]
+ [     2   1050]]
+Precision:0.01693
+Recall:0.9981
+AUCROC:0.97445
+AUCPR:0.53046
+Detector name is  KNN  !
+Execution time: 621.513734
+[[557795  61251]
+ [   293    759]]
+Precision:0.01224
+Recall:0.72148
+Detector name is  KNN  !
+Execution time: 621.513734
+[[557795  61251]
+ [   293    759]]
+Precision:0.01224
+Recall:0.72148
+[[557795  61251]
+ [   293    759]]
+Precision:0.01224
+Recall:0.72148
+AUCROC:0.91866
+AUCPR:0.15433
+Detector name is  LOF  !
+Precision:0.01224
+Recall:0.72148
+AUCROC:0.91866
+AUCPR:0.15433
+Detector name is  LOF  !
+AUCROC:0.91866
+AUCPR:0.15433
+Detector name is  LOF  !
+AUCPR:0.15433
+Detector name is  LOF  !
+Execution time: 653.382889
+[[557241  61805]
+ [   847    205]]
+Precision:0.00331 
+Recall:0.19487
+AUCROC:0.52315
+AUCPR:0.00347
+
+------------------------------------------------------------------
+Précision
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF
+0         donors  0.17786  0.09833  0.11899  0.21952  0.21248
+1          fraud  0.01538  0.01545  0.01566  0.01457  0.00179
+2           http   0.0118  0.01697  0.01693  0.01224  0.00331
+
+Rappel
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF
+0         donors  0.04941  0.16589  0.20005  0.28883  0.33119
+1          fraud  0.89024  0.89431   0.9065   0.8435  0.10366
+2           http  0.69582      1.0   0.9981  0.72148  0.19487
+
+AUC ROC
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF
+0         donors  0.71866  0.76814  0.78716  0.61175  0.59743
+1          fraud  0.95293  0.95227  0.95265  0.93424  0.47504
+2           http  0.90207  0.99957  0.97445  0.91866  0.52315
+
+AUC PR
+   Jeu de données     HBOS    CBLOF  IForest      KNN      LOF
+0         donors  0.10946  0.11641  0.13475  0.15827  0.14566
+1          fraud  0.20812  0.39734   0.1518  0.11057   0.0016
+2           http  0.02295  0.68248  0.53046  0.15433  0.00347
+
+Temps d exécution
+   Jeu de données      HBOS     CBLOF   IForest         KNN          LOF
+0         donors  2.421193  2.761401   6.80535  1252.88561  1789.521812
+1          fraud  0.524694  1.084801  4.739272  253.624961   219.226809
+2           http  1.114948   1.90634  7.603484  621.513734   653.382889
+PS C:\Users\amaly\OneDrive\Bureau\Amu M2\Fouille des données\Tp_durand\Fouilles_des_donnees> 
